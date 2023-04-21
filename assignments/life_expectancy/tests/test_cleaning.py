@@ -5,6 +5,7 @@ from life_expectancy.cleaning import clean_data
 from . import OUTPUT_DIR
 
 
+
 def test_clean_data(pt_life_expectancy_expected):
     """Run the `clean_data` function and compare the output to the expected output"""
     clean_data()
@@ -14,3 +15,4 @@ def test_clean_data(pt_life_expectancy_expected):
     pd.testing.assert_frame_equal(
         pt_life_expectancy_actual, pt_life_expectancy_expected
     )
+
